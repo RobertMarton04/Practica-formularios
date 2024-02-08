@@ -1,3 +1,7 @@
-section{
-    text-align: center;
+pre{
+    line-height: 1px;
+}
+a{
+    color: black;
+    text-decoration: underline;
 }
