@@ -8,18 +8,18 @@
 </head>
 <body>
     <section>
-    <form action="web.php" method="GET"></form>
+    <form action="web.php" method="GET">
    <h1>Accede a tu Área Clientes
 
    </h1>
-   <p>Elige tu documento</p>
+   <pre>Elige tu documento</pre>
    <input type="radio" name="chec" id="DNI" value="1">DNI o Tarjeta de residencia
    <br>
    <input type="radio" name="chec" id="Pasaporte" value="2">Pasaporte
-<p> Número de documento</p>
-<input type="text" name="numeroID" id="numeroID">
+<pre>Número de documento</pre>
+<input type="text" name="numeroID" id="numeroID" title="DNI o Tarjeta de residencia">
 <br>
-<p>Fecha de nacimiento</p>
+<pre>Fecha de nacimiento</pre>
 <input type="date" name="fecha" id="fecha">
 <br>
 <input type="checkbox" name="Recordar" id="recordar">Recordar ?
@@ -34,7 +34,49 @@
 </section>
 <hr>
 
-<form action="web.php" method="GET"></form>
+<form action="web.php" method="GET">
+    <h1>Empieza creando tu usuario</h1>
+    <input type="text" name="Nombre" id="Nombre">
+    <br>
+    
+    <pre>Primer apellido          Segundo apellido</pre>
+   <input type="text" name="apellido1" id="apellido1">
+   <input type="text" name="apellido2" id="apellido2">
+   <pre>Tipo de documento    Numero de documento</pre>
+   <select name="tipoDocumento" id="tipoDocumento">
+    <option value="0">   DNI/NIF/CERT.AEAT  </option>
+    <option value="1">DNI</option>
+    <option value="2">NIF</option>
+    <option value="3">CERT.AEAT</option>
+   </select>
+   <input type="text" name="numDocumento" id="numDocumento">
+   <br>
+   <pre>Móvil                    Email</pre>
+   <input type="text" name="movil" id="movil">
+   <input type="text" name="Email" id="Email">
+   <br>
+   <input type="submit" value="Enviar">
+</form>
+   <hr>
+   <pre>Email</pre>
+<input type="text" name="Email" id="Email">
+<br>
+<pre>Teléfono</pre>
+<input type="date" name="Telefono" id="Telefono">
+
+<form action="web.php" method="GET">
+
+<pre>Contraseña</pre>
+<input type="password" name="contraseña" id="contraseña">
+<br>
+<pre>Repite tu contraseña</pre>
+<input type="password" name="contraseña" id="contraseña">
+<br>
+<input type="checkbox" name="Pdp" id="Pdp">He leído y acepto <a href="">Politica de privacidad</a>
+<br>
+<input type="checkbox" name="add" id="add"> Sí, acepto recibir comunicaciones comerciales y ofertas personalizadas según mi perfil.
+<br><input type="submit" value="Crea tu cuenta">
+
 
 
 </form>
